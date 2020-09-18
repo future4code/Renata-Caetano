@@ -1,0 +1,43 @@
+body{
+margin: 0;
+
+}
+
+#menu{
+ display: flex;
+ background-color: chartreuse;
+ margin: 0;
+    
+}
+
+#menu li{
+ color:black;
+ text-decoration: none;
+ display: block;
+ padding: 15px;
+}
+
+#menu li:first-child {
+
+margin-right: auto;
+
+
+}
+h1{
+
+text-align: center;
+
+
+}
+
+
+IMG.displayed {
+    display: block;
+    width: 10%;
+    height: 10%;
+    margin: auto;
+}
+
+
+--<div class="parte1">
+<div class="centralize">
