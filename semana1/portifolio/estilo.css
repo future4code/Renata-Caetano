@@ -1,43 +1,76 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
 margin: 0;
+font-family: 'Roboto', sans-serif;
 
 }
 
-#menu{
- display: flex;
- background-color: chartreuse;
- margin: 0;
+.header{
+
+    background-color: chartreuse;
+    text-align: center;
+    padding: 20px;
     
 }
 
-#menu li{
- color:black;
- text-decoration: none;
- display: block;
- padding: 15px;
+
+.footer{
+    background-color: chartreuse;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ 
 }
 
-#menu li:first-child {
-
-margin-right: auto;
-
-
-}
-h1{
-
-text-align: center;
-
-
+#minhafoto{
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
 }
 
 
-IMG.displayed {
-    display: block;
-    width: 10%;
-    height: 10%;
-    margin: auto;
+.conteudo{
+text-align: justify;
+color: black;
+font-family: 'Roboto', sans-serif;
+
+}
+
+form input{
+
+display: block;
+
 }
 
 
---<div class="parte1">
-<div class="centralize">
+img.displayed {
+    padding: 3px;
+    width: 3%; 
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.menu{
+
+ 
+ margin:0;
+ 
+    
+}
+
+.menu a{
+color: black;
+padding: 10px;
+
+
+}
