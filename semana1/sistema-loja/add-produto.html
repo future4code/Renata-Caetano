@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="estilizar.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
 </head>
 <body>
-    <div>
-        <h3><em>Fruta Boa</em></h3>
-    </div>
-    
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-    </div>
+    <header >
+             <h1>Loja virtual Fruta Boa</h1>
+        
+             <div id="menu">
+            <ul>
+               <li><a href="index.html">Página Inicial</a></li>
+               <li><a href="ctrl-estoque.html">Controle de Estoque</a></li>
+               <li><a href="add-produto.html">Adicionar Produto</a></li>
+               <li><a href="funcionarios.html">Funcionários</a></li>
+            </ul>
+       </div>
+    </header>
 
     
+    <div id="conteudo">    
     <h2>Adicionar Produto</h2>
-    <form action="">
+    <div action="">
         <div>
             <label for="link-foto">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
@@ -48,8 +52,20 @@
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
             <button type="submit">Adicionar</button>
         </div>
+    </div>    
 
     </form>
-
+   
+    <footer>
+       
+        <h3> Siga-nos nas redes sociais</h3>
+        
+    
+            <img class='displayed ' src="https://image.flaticon.com/icons/png/512/25/25305.png"/>
+            <img class='displayed 'src="https://image.flaticon.com/icons/png/512/25/25425.png"/>
+            <img class='displayed 'src="https://image.flaticon.com/icons/png/512/8/8800.png"/>
+        
+    
+    </footer>
 </body>
 </html>
