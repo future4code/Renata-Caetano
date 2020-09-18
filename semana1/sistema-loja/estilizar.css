@@ -1,81 +1,99 @@
+
 header{
-    background-color: dodgerblue;
-    color: blue ;
-    text-align: center;
-    padding: 20px 40px;
+display: table;
+width: 100%;
+background-color: dodgerblue;
     }
 
-body{
+html, body {
+height:100%;
+font-family: Cambria;
 
-background-color: lightblue;
-margin:0;
-}
-
-h1,h2,h3{
-
-text-align: center;
-color: blue;   
-margin: 0; 
+margin:auto;
 
 }
+
+h1{
+
+text-align:center;
+margin: 0;
+background-color: dodgerblue;
+float:left;
+padding: 5px 5px;
+
+}
+
+h2,h3{
+
+    text-align: center;
+          
+    }
+
 
 a{
-    font-size: 25px;
-    color: blue;
+    font-size: 20px;
+    color:black;
     text-align: center;
+    text-decoration: none; 
+    padding: 5px 20px;   
 }
 
-p{
-color: darkblue;    
+#conteudo{
+  
 text-align: center;
 font-size: 20px;
-margin: 0;
-
-}
-
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-     
-
+background-color: lightblue;
+margin: 0; 
+padding: 5px 10px;  
 }
 
 #menu {
-   
-    text-align: center;
-    padding: 10;
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 70%;
+    float:right;
+ }
     
-}
-
-   #menu ul  {
-    display: table ;
-    margin: 20px auto 5px;
+#menu ul {
+    margin: 5px auto;
+    display: table;
+    padding: 0;
+    float:right;
     
    }
-
 
 #menu ul li {
  
  display: inline;
 
 }
+IMG.displayed {
+    padding: 10px;
+    width: 3%; }
 
-#organizandotabela{
+IMG.fotosfrutas{
+   padding: 10px;
+   width: 50%; }
 
 
+#tabela{
 
-
+    text-align: center;
+    margin: auto;
+    
 
 }
-
 footer{
 
     background-color: dodgerblue;
-    color: blue ;
+    width:100%;
     text-align: center;
-    padding: auto;
-    margin: auto;
-        
-    }
+    bottom:0;
+    margin:0;
+    padding: 15px 10px 30px 10px; 
     
+}
+
+ 
+
+ 

@@ -8,48 +8,54 @@
     <title>Controle de Estoque</title>
 </head>
 <body>
-    <header>
+    <header >
+        <h1>Loja virtual Fruta Boa</h1>
    
-        <h1>Fruta Boa</h1>
-   
-    </header>
-     
-    
+        <div id="menu">
+       <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="ctrl-estoque.html">Controle de Estoque</a></li>
+          <li><a href="add-produto.html">Adicionar Produto</a></li>
+          <li><a href="funcionarios.html">Funcionários</a></li>
+       </ul>
+  </div>
+</header>
+<div id="conteudo">
     <h2>Controle de Estoque</h2>
 
     
-    <table>
+    <table id='tabela' border="1px">
        
         <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
+            <td><strong>Foto</strong></td>
+            <td><strong>Descrição</strong></td>
+            <td><strong>Preço R$</strong></td>
+            <td><strong>Quantidade disponível</strong></td>
         </tr>
 
         <tr>
-            <td><img src="./img/maca.jpg" alt="macavermelha"/></td>
+            <td><img class='fotosfrutas' src="./img/maca.jpg" alt="macavermelha"/></td>
             <td> Maça </td>
             <td> 1 </td>
             <td> 10  </td>
+      
         </tr>
-
         <tr>
-            <td><img src="./img/pera.jpg" alt="pera"/></td>
+            <td><img class='fotosfrutas' src="./img/pera.jpg" alt="pera"/></td>
             <td> Pera </td>
             <td> 0,5 </td>
             <td> 5 </td>
         </tr>
 
         <tr>
-            <td><img src="./img/uva.jpg" alt="uvaroxa"/></td>
+            <td><img  class='fotosfrutas'src="./img/uva.jpg" alt="uvaroxa"/></td>
             <td> Uva </td>
             <td> 7,99 </td>
             <td> 2 </td>
         </tr>
 
         <tr>
-            <td><img src="./img/goiaba.jpg" alt="goiaba"/></td>
+            <td><img class='fotosfrutas'src="./img/goiaba.jpg" alt="goiaba"/></td>
             <td> Goiaba </td>
             <td> 3,50 </td>
             <td> 20 </td>
@@ -57,7 +63,7 @@
         
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
         <tr>
-            <td><img src="./img/morango.jpg" alt="morangos"/></td>
+            <td><img class='fotosfrutas' src="./img/morango.jpg" alt="morangos"/></td>
             <td> Morangos </td>
             <td> 5,6</td>
             <td> 15 </td>
@@ -65,21 +71,17 @@
 
     </table>
    
-
-    <footer >
-    <div id="menu">
-
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
-   
-    </div>
-
-
-
-
-
-</footer>
+</div>
+    <footer>
+       
+        <h3> Siga-nos nas redes sociais</h3>
+        
+    
+            <img class='displayed ' src="https://image.flaticon.com/icons/png/512/25/25305.png"/>
+            <img class='displayed 'src="https://image.flaticon.com/icons/png/512/25/25425.png"/>
+            <img class='displayed 'src="https://image.flaticon.com/icons/png/512/8/8800.png"/>
+        
+    
+    </footer>
 </body>
 </html>
