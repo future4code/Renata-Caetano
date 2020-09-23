@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
+margin: 0;
+font-family: 'Roboto', sans-serif;
+
+}
+
+.header{
+
+    background-color: chartreuse;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+
+.footer{
+    background-color: chartreuse;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ 
+}
+
+#minhafoto{
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.conteudo{
+text-align: justify;
+color: black;
+font-family: 'Roboto', sans-serif;
+
+}
+
+form input{
+
+display: block;
+
+}
+
+
+img.displayed {
+    padding: 3px;
+    width: 3%; 
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+.menu{
+
+ 
+ margin:0;
+ 
+    
+}
+
+.menu a{
+color: black;
+padding: 10px;
+
+
+}
