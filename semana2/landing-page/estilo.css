@@ -26,6 +26,7 @@ flex-wrap: wrap;
 .menu{
 display: flex;
 background-color:  rgb(218, 229, 232);
+align-items: center;
 
 }
 
@@ -94,9 +95,44 @@ margin: 10px;
 
  }
 
+ .mainfinal{
+    display: flex;
+    background-color:;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    max-width: 1280px;
+    justify-content: center;
+    padding: 50px;
+    mar
+
+ }
+
  img {
     max-width: 100%;
     display: block;
     padding: 10px;
+
+ }
+
+ .content{
+    display: flex;
+    justify-content: center;
+    
+ }
+
+ .contato{
+    width: 100%;
+    max-width: 500px;
+
+ }
+ .form{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ 
+ textarea{
+    height: 150px;
 
  }
