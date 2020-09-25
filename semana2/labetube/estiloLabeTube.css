@@ -27,8 +27,11 @@ text-align: center;
 
 img{
 max-width: 50%;
-display: block;
+
 margin: 10px;
+text-align: center;
+
+
 
 }
 
@@ -50,12 +53,18 @@ a{
     color: blue;
 }
 
+p{
+text-align: center;
+
+
+}
+
     .main {
         display: grid;
         justify-items: center;    
         grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
         gap: 1em;
-
+     
        
        
 
@@ -65,15 +74,12 @@ a{
 
 
 
-.footer{
-background-color: black;
-color: yellow;
-margin: 0;
-padding: 20px;
-position: fixed;
-bottom: 0;
-width: 100%;
-
-
+footer {
+      
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width:100%;
+      
 }
 
