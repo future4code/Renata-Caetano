@@ -69,9 +69,9 @@ console.log (numeroParnumber % 2)*/
 //Exercícios de escrita de código 03
 
 //a 
-listaDeTarefas=[]
+/*listaDeTarefas=[]
 //b
-/*let tarefaOne = prompt ("Cite a primiera tarefa que precisa realizar :")
+let tarefaOne = prompt ("Cite a primiera tarefa que precisa realizar :")
 listaDeTarefas.push(tarefaOne)
 let tarefaTwo = prompt ("Cite a segunda tarefa que precisa realizar :")
 listaDeTarefas.push(tarefaTwo)
@@ -94,3 +94,37 @@ console.log(listaDeTarefas)*/
 const email= prompt("Digite seu email: ")
 
 console.log("O email "+ email + " do usuário foi cadastrado com sucesso. "+ "Seja bem vinda "+ nome)*/
+
+
+//Desafios Extras 
+
+//1 - 
+//A  - Graus Fahrenheit(°F) para Kelvin(K) 
+/*
+let perguntaGrau= prompt("Digite um valor em Graus Fahrenheit para converter em  Kelvin:")
+let valorDigitado = Number(perguntaGrau)
+let grausF = valorDigitado
+let conversao= (grausF - 32)*5/9 + 273.15
+console.log(conversao)*/
+
+
+//B - Graus Celsius(°C) para Graus Fahrenheit 
+/*
+let perguntaGrau= prompt("Digite um valor em Graus Celsius para converter em Graus Fahrenheit:")
+let valorDigitado = Number(perguntaGrau)
+let grausC = valorDigitado
+let conversao= (grausC)*9/5 + 32
+console.log(conversao)*/
+
+
+//C - D - Calcule e mostre o valor de °C em °F e K, mostrando as unidades no console também.
+/*let perguntaGrauCelsius= prompt("Digite um valor em Graus Celsius ")
+let valorDigitado = Number(perguntaGrauCelsius)
+let grausC = valorDigitado
+let conversaoCparaF= (grausC)*9/5 + 32
+let conversaoCparaK= (grausC)+ 273.15
+console.log(`O valor digitado é : ${valorDigitado}ºC , convertido em Fahrenheit fica: ${conversaoCparaF}ºF`)
+console.log(`O valor digitado é : ${valorDigitado}ºC , convertido em Kelvin fica: ${conversaoCparaK}K`)*/
+
+
+
