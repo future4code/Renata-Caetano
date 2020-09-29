@@ -126,5 +126,24 @@ let conversaoCparaK= (grausC)+ 273.15
 console.log(`O valor digitado é : ${valorDigitado}ºC , convertido em Fahrenheit fica: ${conversaoCparaF}ºF`)
 console.log(`O valor digitado é : ${valorDigitado}ºC , convertido em Kelvin fica: ${conversaoCparaK}K`)*/
 
+/* 2 - Quilowatt-hora é uma unidade de energia; e é muito utilizada para se determinar o consumo de energia elétrica
+ em residências. Sabe-se que o quilowatt-hora de energia custa R$0.05. 
+ Faça um programa que receba a quantidade de quilowatts consumida por uma residência.*/
 
+//A - Calcule e mostre o valor a ser pago por uma residência que consuma 280 quilowatt-hora;
 
+/*const valorQh = 0.05
+let perguntaConsumo= prompt("Digite o consumo de Quilowatts ")
+let consumo =  Number(perguntaConsumo)
+let valorCobrado= consumo*valorQh
+console.log ('O valor cobrado será R$' + valorCobrado)*/
+
+//B - 
+/*const valorQh = 0.05
+let perguntaConsumo= prompt("Digite o consumo de Quilowatts ")
+let consumo =  Number(perguntaConsumo)
+let valorCobrado= (consumo*valorQh)
+
+let valorDesconto = valorCobrado * 0.15
+let valorFinal = valorCobrado - valorDesconto
+console.log ('O valor cobrado com 15% de desconto será R$' + valorFinal)*/
