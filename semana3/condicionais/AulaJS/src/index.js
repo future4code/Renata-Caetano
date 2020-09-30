@@ -146,7 +146,7 @@ else { console.log("Escolha outro filme se quiser companhia do seu amigo rsrsrs"
 
 
 //DESAFIO 2
-let preco 
+/*let preco 
 const nome = prompt("Digite seu nome: ")
 const tipo = prompt("Digite o tipo de jogo IN (internacional) DO (doméstico) ")
 const etapa= prompt("Digite a etapa do jogo SF(semi-final) DT(decisão de terceiro lugar) FI(final)")
@@ -230,4 +230,4 @@ case tipo==="DO" && etapa==="FI" && categoria=== 4:
 break;
 
 }
-console.log(`---Dados da compra--- \n Nome:${nome} \n Tipo de jogo: ${tipo} \n Etapa do jogo: ${etapa} \n Catergoria: ${categoria} \n Quantidade: ${quantidade} \n ----Valores ----- \n valor unitario: ${valor} \n Valor Total: ${valor*quantidade}`)
+console.log(`---Dados da compra--- \n Nome:${nome} \n Tipo de jogo: ${tipo} \n Etapa do jogo: ${etapa} \n Catergoria: ${categoria} \n Quantidade: ${quantidade} \n ----Valores ----- \n valor unitario: ${valor} \n Valor Total: ${valor*quantidade}`)*/
