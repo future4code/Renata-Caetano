@@ -148,7 +148,86 @@ else { console.log("Escolha outro filme se quiser companhia do seu amigo rsrsrs"
 //DESAFIO 2
 let preco 
 const nome = prompt("Digite seu nome: ")
-const tipoDeJogo = prompt("Digite o tipo de jogo IN (internacional) DO (doméstico) ")
-const etapaDoJogo= prompt("Digite a etapa do jogo SF(semi-final) DT(decisão de terceiro lugar) FI(final)")
+const tipo = prompt("Digite o tipo de jogo IN (internacional) DO (doméstico) ")
+const etapa= prompt("Digite a etapa do jogo SF(semi-final) DT(decisão de terceiro lugar) FI(final)")
 const categoria = Number(prompt("Digite a categoria: 1, 2, 3, 4 "))
 const quantidade = Number(prompt("Digite a quantidade de ingressos desejados"))
+let valor
+ 
+
+switch (tipo) {
+    
+case tipo==="DO" && etapa==="SF" && categoria=== 1:
+
+    valor = 1320
+    valorTotal = (valor*quantidade)
+break;
+
+
+case tipo==="DO" && etapa==="SF" && categoria=== 2:
+
+    valor = 880
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="SF" && categoria=== 3:
+
+    valor = 550
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="SF" && categoria=== 4:
+
+    valor = 220
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="DT" && categoria=== 1:
+
+    valor = 660
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="DT" && categoria=== 2:
+
+    valor = 440
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="DT" && categoria=== 3:
+
+    valor = 330
+    valorTotal = (valor*quantidade)
+break;
+case tipo==="DO" && etapa==="DT" && categoria=== 4:
+
+    valor = 170
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="FI" && categoria=== 1:
+
+    valor = 1980
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="FI" && categoria=== 2:
+
+    valor = 1320
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="FI" && categoria=== 3:
+
+    valor = 880
+    valorTotal = (valor*quantidade)
+break;
+
+case tipo==="DO" && etapa==="FI" && categoria=== 4:
+
+    valor = 330
+    valorTotal = (valor*quantidade)
+break;
+
+}
+console.log(`---Dados da compra--- \n Nome:${nome} \n Tipo de jogo: ${tipo} \n Etapa do jogo: ${etapa} \n Catergoria: ${categoria} \n Quantidade: ${quantidade} \n ----Valores ----- \n valor unitario: ${valor} \n Valor Total: ${valor*quantidade}`)
