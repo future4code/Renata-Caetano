@@ -30,12 +30,24 @@ if (confirm("Clique em OK para iniciar uma rodada ou CANCELAR para sair"))
    // console.log(`Cartas Jogador: ${primeiraCartaJ.texto} ${segundaCartaJ.texto} Pontos: ${pontosJ}`)
    // console.log(`Cartas Maquina: ${primeiraCartaM.texto} ${segundaCartaM.texto} Pontos: ${pontosM}`)
 
-  
+let distribuirCarta  
 let cartasJogador=[]
 cartasJogador.push(primeiraCartaJ.valor , segundaCartaJ.valor)
 let cartasMaquina=[]
 cartasMaquina.push(primeiraCartaM.valor , segundaCartaM.valor)
 
+for((primeiraCartaJ === segundaCartaJ)&&(cartasJogador===A)) {
+ distribuirCarta=comprarCarta() 
+ 
+if (pontosJ > pontosM) {
+   console.log("Usuário Ganhou")
+}
+else if (pontosJ < pontosM) {
+   console.log("Máquina ganhou")
+}
+else {
+   console.log("Empate")
+}
 console.log(cartasJogador)
 console.log(cartasMaquina)
 
