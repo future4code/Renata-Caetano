@@ -39,5 +39,7 @@ console.log(`Eu sou, ${nome},tenho ${idade}anos , sou de ${cidade} e ${souEstuda
 
 sobreMim("Renata" 33 "Maringá",true)*/
 
+//EXERCICO ESCRITA 05-
+//A- 
 
 
