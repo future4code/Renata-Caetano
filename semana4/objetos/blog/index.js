@@ -1,26 +1,37 @@
-let arrayPost=[]
 
-function clicarCriar(){
-    let armazenaTitulo = document.getElementById('titulo-post');
-    let armazenaAutor = document.getElementById('autor-post');
-    let armazenaConteudo = document.getElementById('conteudo-post');
-   
-    
-    let post ={
-        
-        titulo:armazenaTitulo.value,
-        autor:armazenaAutor.value,
-        conteudo:armazenaConteudo.value,    
-        
-        
-        /*if (post.value !== "") {
-            let arrayPost = document.getElementById("post")
-            post.value=""};*/
-    
+/*function inserirConteudo() {
+    let escrevendo = {
+        titulo:tilulo.value,
+        autor: autor.value,
+        conteudo: conteudo.value
     }
-
-     arrayPost.push(post.value)
-     console.log(arrayPost)
-     //let conteudoContainer = document.getElementById('container-de-posts').innerHTML+=`<p>${post.value}</p>`
-
+    const formLista = ["titulo", "autor", "conteudo"];
+    formLista.push(escrevendo)
+    console.log(escrevendo)
+    document.getElementById("form").innerHTML += `<p>${titulo.value}</p>`;
+    document.getElementById("form").innerHTML += `<p>${autor.value}</p>`;
+    document.getElementById("form").innerHTML += `<p>${conteudo.value}</p>`;
+    titulo.value = "";
+    autor.value = "";
+    conteudo.value = "";
 }
+function lista() {
+    let titulo = document.getElementById("titulo-post");
+    let autor = document.getElementById("autor-post");
+    let conteudo = document.getElementById("conteudo-post");
+    let escrevendo = {
+
+        titulo: titulo.value,
+        autor: autor.value,
+        conteudo: conteudo.value,
+    }
+    const formLista = [];
+    formLista.push(escrevendo);
+    for (i = 0; i < formLista.length; i++) {
+        document.getElementById("form").innerHTML += `<p>Título: ${titulo.value}</p>`;
+        document.getElementById("form").innerHTML += `<p>Autor: ${autor.value}</p>`;
+        document.getElementById("form").innerHTML += `<p>Conteúdo: ${conteudo.value}</p>`;
+        titulo.value = "";
+        autor.value = "";
+        conteudo.value = "";
+    }}*/
