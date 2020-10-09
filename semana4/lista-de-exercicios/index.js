@@ -148,3 +148,13 @@ console.log(segundoValorMenor)
 }
 
 valores(arrayNumeros)*/
+
+//02->>
+/*let mensagem =()=>{
+
+alert("Hello Future4")
+
+}
+
+mensagem()
+*/
