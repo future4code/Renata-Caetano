@@ -35,11 +35,11 @@
 
 //02->>
 
-    // A -> false
-    // B -> false
-    // C -> true
-    // D -> true
-    // E -> true
+// A -> false
+// B -> false
+// C -> true
+// D -> true
+// E -> true
 
 //03->> este código não funciona pois falta alguns topicos como sinal de '=','[]','um valor','i++'
 //e na condição tem que sair sinal de = para ´pegar apenas a quantidade desejada.
@@ -75,19 +75,20 @@ trigonometria(a,b,c);
 */
 
 //05->>
-const a=Number(prompt('Digite uma valor'))
+/*const a=Number(prompt('Digite uma valor'))
 const b=Number(prompt('Digite o segundo valor' ))
 
 let arrayNumero = [a,b]
 let valorMaior = 0
-let valorMenor = 0
+let valorMenor = Infinity
 
 
 
 for(let i=0 ;i < arrayNumero.length; i++){
     if (arrayNumero[i] > valorMaior ){
     valorMaior=arrayNumero[i]
-}else{
+}
+if (arrayNumero[i] < valorMenor ) {
  valorMenor=arrayNumero[i]
 }
 }
@@ -96,12 +97,54 @@ console.log ('ENTRADA:')
 console.log(`os valores digitados são :${a} e ${b}`)
 console.log ('SAIDA:')
 console.log(`O valor maior é : ${valorMaior}`)
-
+console.log(`O valor menor é : ${valorMenor}`)
 if (valorMaior % valorMenor === 0)
 {
   console.log(`o numero ${valorMaior} é divisivel por ${valorMenor}`) 
 }
-else{
 
-    console.log(`o numero ${valorMenor} não divisivel por ${valorMaior}`) 
+if (valorMenor % valorMaior !== 0 ){
+
+    console.log(`o numero ${valorMenor} não é divisivel por ${valorMaior}`) 
+}*/
+
+//**********************EXERCICIOS DE FUNÇÃO***************************************
+
+//1-->
+/*
+let arrayNumeros = [199,5, 10, 55, 88,1, 99, 200,2, 77, 65, 31,299, 100,90,300 ]
+let primeiroValorMaior = 0
+let segundoValorMaior = 0
+let primeiroValorMenor = Infinity
+let segundoValorMenor = Infinity
+
+// pegar o meio e o menor numero
+function valores(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > primeiroValorMaior) {
+            primeiroValorMaior = array[i]
+        }
+        if (array[i] < primeiroValorMenor) {
+            primeiroValorMenor = array[i]
+        }
+    
+    for (let i = 0; i < array.length; i++)  {   
+        if (array[i] > segundoValorMaior && array[i] < primeiroValorMaior) {
+            segundoValorMaior = array[i]
+        }
+      
+        if (array[i] < segundoValorMenor && array[i] > primeiroValorMenor) {
+            
+           segundoValorMenor = array[i]
+         }
+
+        }
+    
 }
+console.log(primeiroValorMaior)
+console.log(segundoValorMaior)
+console.log(primeiroValorMenor)
+console.log(segundoValorMenor)
+}
+
+valores(arrayNumeros)*/
