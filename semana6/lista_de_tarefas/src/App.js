@@ -20,16 +20,7 @@ const InputsContainer = styled.div`
 
 class App extends React.Component {
     state = {
-      tarefas: [{
-        id: Date.now(),
-        texto: 'Texto da primeira tarefa',
-        completa: false // Indica se a tarefa está completa (true ou false)
-      },
-      {
-        id: Date.now(), // Explicação abaixo
-        texto: 'Texto da segunda tarefa',
-        completa: true // Indica se a tarefa está completa (true ou false)
-      }],
+      tarefas: [],
       textoNovaTarefa:'',
       inputValue:'',
       filtro: 'pendentes',
@@ -55,7 +46,7 @@ this.setState({textoNovaTarefa:event.target.value});
     const novaTarefa ={
       id: Date.now(),
       texto:this.state.textoNovaTarefa,
-      completa:false 
+      completa:false
         
     }
     
@@ -65,22 +56,23 @@ this.setState({textoNovaTarefa:event.target.value});
 }
 
 
-  selectTarefa = (id) => {
-// const novaListaDeTarefas = this.state.Tarefas.map((tarefa)=>{
-// if (tarefa.id === id){
-//   const novaTarefa1 ={
-//     ...tarefa,
-//     completa:!tarefa.completa
-//   }
-//   return novaTarefa
-// }else{
-//   return tarefa
-// }
-// })
-// this.setState({tarefas: novaTarefa})
-//  
- }
-  onChangeFilter = (event) => {
+selectTarefa = (id) => {
+  const novaListaDeTarefas = this.state.tarefas.map((tarefa) => {
+    if (tarefa.id === id) {
+      const novaTarefa = {
+        ...tarefa,
+        completa: !tarefa.completa
+      }
+      return novaTarefa
+    } else {
+      return tarefa
+    }
+
+  })
+  this.setState ({tarefas:novaListaDeTarefas})
+
+}
+onChangeFilter = (event) => {
 
   }
 
@@ -117,17 +109,18 @@ this.setState({textoNovaTarefa:event.target.value});
           {listaFiltrada.map(tarefa => {
             return (
               <Tarefa
-                completa={tarefa.completa}
-                onClick={() => this.selectTarefa(tarefa.id)}
-              >
-                {tarefa.texto}
-              </Tarefa>
-            )
-          })}
-        </TarefaList>
-      </div>
-    )
-  }
+                  completa={tarefa.completa}
+                  onClick={() => this.selectTarefa(tarefa.id)}
+                >
+                  {tarefa.texto}
+                </Tarefa>
+              )
+            })}
+          </TarefaList>
+        </div>
+      )
+    }
+  
 }
-
-export default App
+  
+  export default App
