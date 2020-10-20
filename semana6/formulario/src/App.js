@@ -32,10 +32,9 @@ case 4:
 
     if (this.state.etapa===4){
       return <FormularioAcabou />
-   
-    }else{
 
-    
+    }else{
+ 
       return (
         <div>
           {this.renderizaEtapa()}
