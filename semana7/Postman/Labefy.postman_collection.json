@@ -6,114 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "playlist1",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "renata-caetano-dumont",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"musica-pop\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists\n\n",
-					"protocol": "https",
-					"host": [
-						"us-central1-labenu-apis",
-						"cloudfunctions",
-						"net"
-					],
-					"path": [
-						"labefy",
-						"playlists\n\n"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "playlist2",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "renata-caetano-dumont",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\r\n\"name\":\"playlist-dance\"\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-					"protocol": "https",
-					"host": [
-						"us-central1-labenu-apis",
-						"cloudfunctions",
-						"net"
-					],
-					"path": [
-						"labefy",
-						"playlists"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "playlist3",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "renata-caetano-dumont",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"musica-top10\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
-					"protocol": "https",
-					"host": [
-						"us-central1-labenu-apis",
-						"cloudfunctions",
-						"net"
-					],
-					"path": [
-						"labefy",
-						"playlists"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "getAllPlaylists",
 			"request": {
 				"method": "GET",
@@ -169,6 +61,75 @@
 				"header": [],
 				"url": {
 					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchPlayList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrack",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlaylist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Playlist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "renata-caetano-dumont",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Musica Top\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
 				}
 			},
 			"response": []
