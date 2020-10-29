@@ -4,22 +4,31 @@ import axios from 'axios'
 
 class App extends React.Component{
 state ={
-  activity:null
+  activityData:null
 }
-  onClickButton=()=>{
+componentDidMount(){
+this.getActivity();
+
+}
+getActivity =()=>{
+
     axios.get('http://www.boredapi.com/api/activity/').then((response)=>{
       console.log(response);
-      this.setState({activity:response.data})
-      console.log('ATIVIDADE',this.state.activity);
+      this.setState({activityData:response.data})
+      console.log('ATIVIDADE',this.state.activityData);
     });
 
   };
-  
-
- render(){
+  render(){
   return (
     <div >
-      <button onClick={this.onClickButton}>Atividades</button>
+      <button onClick={this.getActivity}>Atividades</button>
+      {this.state.activityData && <div>
+    <p>Nome:{this.state.activityData.activity}</p>
+    <p>Tipo:{this.state.activityData.type}</p>
+    <p>Numero de participantes: {this.state.activityData.participants}</p>
+    <p>Preço: {this.state.activityData.price}</p>
+    </div>}
     </div>
   );
 }
