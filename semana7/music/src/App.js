@@ -4,6 +4,7 @@ import DetailList from './components/detailList'
 import ViewList from './components/viewList'
 import './App.css'
 
+
 class App extends React.Component{
   render(){
   return (

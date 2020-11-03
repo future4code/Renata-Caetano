@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import styled from 'styled-components';
-import Viewlist from './viewList'
+import Viewlist from './viewList';
 
 
 
@@ -39,9 +39,13 @@ export default class CreateList extends React.Component{
       return (
         <div>
           <h1>PlayList</h1>
+         
+          <br/>
+          <hr/>
+          <p><strong>Criar sua Playlist</strong></p>
           <input value={this.state.nameValue} onChange={this.onChangeNameValue} placeholder ="Digite nome da PlayList"/>
           <button onClick={this.createPlayList}>Create</button>
-          <p>Lista de Playlist</p>
+          <p><strong>Listar Playlists </strong></p>
           <Viewlist />
         </div>
       );
