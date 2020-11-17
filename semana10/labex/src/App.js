@@ -1,13 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Router from './Router/Router'
+import HomePage from './components/HomePage'
+import{Switch,Route,BrowserRouter} from 'react-router-dom'
 
-function App() {
-  return (
-    <div>
-      
-
-
-    </div>
-  );
+export default function App() {
+  return <Router />;
+ 
 }
-export default App;
+
