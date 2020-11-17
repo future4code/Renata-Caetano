@@ -2,7 +2,14 @@ import React from 'react';
 
 
 
-export default function ListTrips() {
-  return <div />;
-}
+export default function ListTrip() {
+  return (
+<div>
 
+  OLA EU SOU LIST
+</div>
+
+
+
+  );
+}
