@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import Logo from './Img/Logo.jpg';
 
  const HomePage = () => {
   const history = useHistory();
@@ -8,40 +9,80 @@ import styled from "styled-components";
   const goToLogin = () => {
     history.push('/Login')
   };
-  const goToPrivatePage = () => {
-    history.push("/PrivatePage")
+  const goToPublicPage = () => {
+    history.push("/PublicPage")
   };
 
   const Container=styled.div`
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
   background-color:white;
   width: 100vw;
   height: 100vh;
  
    `;
 
-  const Titulo =styled.h3` 
-  color:blueviolet;
+  const Titulo =styled.h1` 
+  color:purple;
   text-align:center;
-  `;
-  const ButtonStyle =styled.div` 
-  display :flex;
-  flex-direction:row;
-  justify-content:center;
-  padding:100px;
-  `;
-
+  font-size:30px;
   
+  `;
+ 
+ const ButtonPublic = styled.button`
+ background-color: blueviolet;
+  border: 1px solid blueviolet;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding:20px;
+  justify-content:space-around;
+  cursor: pointer;
+  &:hover {
+  background-color:#f4ecf4;
+  color:purple;
+  }
+`;
+const ButtonAdm = styled.button`
+ background-color: blueviolet;
+  border: 1px solid blueviolet;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding:20px;
+  cursor: pointer;
+  &:hover {
+  background-color:#f4ecf4;
+  color:purple;
+  } `;
+  
+const ImgLogo = styled.img`
+height:200px;
+width:200px;
+padding:0;
+margin-top:0;
 
+`;
+const Header = styled.div`
+display:flex;
+justify-content:center;
 
- return(
+`;
+
+   return(
    <Container>
+   <Header>
     <Titulo>
-    <h3>HOME PAGE</h3>
+    <h1>LabeX</h1>
     </Titulo>
-    <ButtonStyle>
-   <button onClick={goToPrivatePage}>Formulario de aplicação</button>
-   <button onClick={goToLogin}>Login Administrativo</button>
-   </ButtonStyle>
+    <ImgLogo src={Logo} alt='superhero'></ImgLogo>
+    </Header>
+   <ButtonPublic onClick={goToPublicPage}> QUERO ME CANDIDATAR</ButtonPublic>
+   <ButtonAdm onClick={goToLogin}>ÁREA DO ADMINISTRADOR</ButtonAdm>
+ 
 
 
    </Container>
