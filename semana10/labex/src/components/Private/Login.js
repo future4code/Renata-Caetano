@@ -2,32 +2,16 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import Logo from '../Img/Logo.jpg'
+import Header from '../Header'
 
-const ImgLogo = styled.img`
-  height:200px;
-  width:200px;
-  padding:0;
-  margin-top:0;
-  `;
-  const Header = styled.div`
-  display:flex;
-  justify-content:center;
-  `;
-  
-  const Titulo =styled.h1` 
-  color:purple;
-  text-align:center;
-  font-size:30px;
-  `;
-   const Container=styled.div`
+const Container=styled.div`
    background-color:white;
    width: 100vw;
    height: 100vh;
     `;
      
    const Conteudo =styled.div` 
-   padding:100px;
+   padding:50px;
    color:purple;
    text-align:center;
    font-size:20px;
@@ -46,11 +30,10 @@ const ImgLogo = styled.img`
    cursor: pointer;
    &:hover {
    background-color:blueviolet;
-   color:purple;
-   
-
+   color:white;
    } `;
-     const ButtonRetornar =styled.button` 
+
+const ButtonRetornar =styled.button` 
      background-color: #f4ecf4;
      border: 1px solid blueviolet;
      border-radius:5px;
@@ -62,10 +45,8 @@ const ImgLogo = styled.img`
      cursor: pointer;
      &:hover {
      background-color:blueviolet;
-     color:purple;
- 
-  
-     } `;
+     color:white;
+      } `;
 
 
 export default function LoginPage() {
@@ -117,13 +98,9 @@ export default function LoginPage() {
   return (
   
     <Container>
-      <Header>
-      <Titulo>
-      <h1>LabeX</h1>
-      </Titulo>
-      <ImgLogo src={Logo} alt='superhero'></ImgLogo>
-      </Header>
+      <Header/>
 <Conteudo>
+<h3><u><i>Login</i></u></h3>
      <p> <input value={email} onChange={handleEmail} placeholder= 'E-mail' /></p>
      <p> <input value={password} onChange={handlePassword} placeholder= 'password' type='password'/></p>
       <ButtonLogin onClick={login}>Login</ButtonLogin>

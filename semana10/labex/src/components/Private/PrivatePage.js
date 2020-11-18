@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import Logo from '../Img/Logo.jpg'
+import Header from '../Header'
 
  const PrivatePage = () => {
   const history = useHistory();
@@ -23,8 +23,7 @@ import Logo from '../Img/Logo.jpg'
   background-color:white;
   width: 100vw;
   height: 100vh;
- 
-   `;
+    `;
     
   const Conteudo =styled.div` 
   color:purple;
@@ -43,36 +42,12 @@ import Logo from '../Img/Logo.jpg'
   cursor: pointer;
   &:hover {
   background-color:blueviolet;
-  color:purple;
-  
-  } `;
-const ImgLogo = styled.img`
-height:200px;
-width:200px;
-padding:0;
-margin-top:0;
-`;
-const Header = styled.div`
-display:flex;
-justify-content:center;
-`;
-
-const Titulo =styled.h1` 
-color:purple;
-text-align:center;
-font-size:30px;
-
-`;
+  color:white;
+  }`;
 
   return(
 <Container>
-    <Header>
-    <Titulo>
-    <h1>LabeX</h1>
-    </Titulo>
-    <ImgLogo src={Logo} alt='superhero'></ImgLogo>
-    </Header>
-
+    <Header/>
 <Conteudo>
 <p>Vamos marcar um viagem?</p>
 <ButtonTrip onClick={goToCreateTrip}>Criar Viagem</ButtonTrip>
@@ -84,12 +59,6 @@ font-size:30px;
 <ButtonTrip onClick={goToHomePage}>Retornar</ButtonTrip>
 </Conteudo>
     
-   
-   
-   
-
-  
-
    </Container>
   )
 

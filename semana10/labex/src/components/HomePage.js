@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import Logo from './Img/Logo.jpg';
+import Header from './Header'
 
  const HomePage = () => {
   const history = useHistory();
@@ -20,17 +20,9 @@ import Logo from './Img/Logo.jpg';
   background-color:white;
   width: 100vw;
   height: 100vh;
- 
-   `;
+    `;
 
-  const Titulo =styled.h1` 
-  color:purple;
-  text-align:center;
-  font-size:30px;
-  
-  `;
- 
- const ButtonPublic = styled.button`
+  const ButtonPublic = styled.button`
  background-color: blueviolet;
   border: 1px solid blueviolet;
   color: white;
@@ -43,8 +35,8 @@ import Logo from './Img/Logo.jpg';
   &:hover {
   background-color:#f4ecf4;
   color:purple;
-  }
-`;
+  }`;
+
 const ButtonAdm = styled.button`
  background-color: blueviolet;
   border: 1px solid blueviolet;
@@ -59,32 +51,12 @@ const ButtonAdm = styled.button`
   color:purple;
   } `;
   
-const ImgLogo = styled.img`
-height:200px;
-width:200px;
-padding:0;
-margin-top:0;
-
-`;
-const Header = styled.div`
-display:flex;
-justify-content:center;
-
-`;
-
    return(
+
    <Container>
-   <Header>
-    <Titulo>
-    <h1>LabeX</h1>
-    </Titulo>
-    <ImgLogo src={Logo} alt='superhero'></ImgLogo>
-    </Header>
+  <Header/>
    <ButtonPublic onClick={goToPublicPage}> QUERO ME CANDIDATAR</ButtonPublic>
    <ButtonAdm onClick={goToLogin}>ÁREA DO ADMINISTRADOR</ButtonAdm>
- 
-
-
    </Container>
  );
 }
