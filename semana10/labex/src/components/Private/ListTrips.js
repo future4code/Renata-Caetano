@@ -30,12 +30,10 @@ cursor: pointer;
 &:hover {
 background-color:blueviolet;
 color:white;
-
-
 } `;
 
- export default function ListTrip () {
-  const [trip, setTrip] = useState({});
+ export default function ListTrips () {
+  const [trip, setTrip] = useState([]);
   const history = useHistory();
   useProtectPage();
 
@@ -49,24 +47,27 @@ color:white;
   const getTrip = () => {
     axios.get(
         "https://us-central1-labenu-apis.cloudfunctions.net/labeX/renata-caetano-dumont/trips",
-        {
-          headers: {
-            auth: localStorage.getItem("token")
-          }
-        }
+      
       )
       .then((res) => {
-        setTrip(res.data.trip);
+        setTrip(res.data.trips);
       })
       .catch((err) => {
         console.log(err);
       });
   };
 return(
+  
 <Container>
   <Header/>
 <Conteudo>
 <h3><u><i>Lista de viagens</i></u></h3>
+{trip.map(item => (
+      <p key={trip.id}> {item.name} - {item.date} - {item.planet} - {item.durationInDays} dias -
+      
+     {item.description} 
+     </p>
+  ))}
 <ButtonRetornar onClick={goToPrivatePage}>Retornar</ButtonRetornar>
 </Conteudo>
 </Container>

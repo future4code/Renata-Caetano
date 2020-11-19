@@ -53,7 +53,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
-  
+
   const goToHomePage = () => {
     history.push("/")
   };
@@ -101,7 +101,7 @@ export default function LoginPage() {
       <Header/>
 <Conteudo>
 <h3><u><i>Login</i></u></h3>
-     <p> <input value={email} onChange={handleEmail} placeholder= 'E-mail' /></p>
+     <p> <input value={email} onChange={handleEmail}placeholder= 'E-mail' /></p>
      <p> <input value={password} onChange={handlePassword} placeholder= 'password' type='password'/></p>
       <ButtonLogin onClick={login}>Login</ButtonLogin>
       <ButtonRetornar onClick={goToHomePage}>Retornar</ButtonRetornar>

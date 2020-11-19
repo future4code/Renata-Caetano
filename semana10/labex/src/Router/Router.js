@@ -6,7 +6,8 @@ import Login from '../components/Private/Login';
 import CreateTrip from '../components/Private/CreateTrip'
 import DetailTrip from '../components/Private/DetailTrip'
 import ListTrip from '../components/Private/ListTrips'
-
+import PublicPage from '../components/Public/PublicPage'
+import FormPage from '../components/Public/FormPage'
 export default function Router(){
 return(
 <BrowserRouter>
@@ -36,8 +37,12 @@ return(
   <ListTrip/>
 </Route>
 
-
-
+<Route exact path ='/PublicPage'>
+  <PublicPage/>
+</Route>
+<Route exact path ='/FormPage'>
+  <FormPage/>
+</Route>
 
 </Switch>
 </BrowserRouter>

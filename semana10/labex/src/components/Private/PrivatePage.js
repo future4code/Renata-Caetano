@@ -49,7 +49,7 @@ import Header from '../Header'
 <Container>
     <Header/>
 <Conteudo>
-<p>Vamos marcar um viagem?</p>
+<p>Vamos marcar uma viagem?</p>
 <ButtonTrip onClick={goToCreateTrip}>Criar Viagem</ButtonTrip>
 <p>Vamos espiar as viagens marcadas?</p>
 <ButtonTrip onClick={goToListTrip}>Listar Viagem</ButtonTrip>
