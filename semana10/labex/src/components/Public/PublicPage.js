@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import useProtectPage from '../Hooks/UseProtectPage';
 import Header from '../Header';
 import { useHistory } from "react-router-dom";
 import HomePage from '../HomePage';
@@ -21,7 +20,7 @@ font-size:20px;
 flex-direction: column;
   align-items:center;
   justify-content:center;
-  width:460px;
+  width:520px;
   height:680px;
   margin-left:35%;
 
@@ -51,17 +50,17 @@ text-align: center;
 text-decoration: none;
 font-size: 15px;
 padding:5px;
+width:200px;
 cursor: pointer;
 &:hover {
 background-color:blueviolet;
 color:white;
 } `;
 
-
  export default function PublicPage () {
   const [trip, setTrip] = useState([]);
   const history = useHistory();
-  useProtectPage();
+
 
   const goToHomePage = () => {
     history.push("/")
@@ -95,8 +94,8 @@ return(
 <h3><u><i>Quer se candidatar?</i></u></h3>
 
 {trip.map(item => (
-      <p key={trip.id}> {item.name} - {item.date} - {item.planet}
-     {item.durationInDays} dias - {item.description}
+      <p key={trip.id}> {item.name} - {item.date} - {item.planet} - {item.durationInDays} dias -
+      {item.description}
      <ButtonCandidatar onClick={goToFormPage}>Quero esta</ButtonCandidatar>
      <hr/>
      </p>
