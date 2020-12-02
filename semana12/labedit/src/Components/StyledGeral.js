@@ -1,20 +1,18 @@
 import styled from 'styled-components'
 
-export const LoginContainer=styled.div`
+export const Container=styled.div`
 height:100vh;
 width:100vw;
 background-color:rgb(90, 200, 253);
 display:flex;
 flex-direction:column;
 align-items:center;
-padding:30px;
-
-
+padding-top:100px;
 `
 export const ButtonEnter=styled.button`
 
- margin:10px;
- background-color: blue;
+  margin:10px;
+  background-color: blue;
   border: 1px solid blue;
   color: white;
   text-align: center;
@@ -42,23 +40,36 @@ width:80px;
   background-color:#f4ecf4;
   color:blue;
   }`;
-  export const Input = styled.input`
-  width:300px;
-  font-size: 16px;
-  border: solid 1px #dbdbdb;
-  border-radius: 3px;
-  color: #262626;
-  padding: 7px 33px;
-  border-radius: 3px;
-  color: #999;
-  cursor: text;
-  font-size: 14px;
-  font-weight: 300;
+export const NavHeader = styled.div`
+display:flex;
+align-items:center;
+background-color:white;
+h1{
+  color:rgb(90, 200, 253);
+  font-size:40px;
+}
+img{
+  width:100px;
+}
+`
+export const ButtonBack=styled.button`
+background-color: blue;
+width:80px;
+  border: 1px solid blue;
+  color: white;
   text-align: center;
-  background: #fafafa;
-  &:active,
-  &:focus {
-    text-align: left;
-  }
-`;
+  text-decoration: none;
+  justify-content:space-around;
+  border-radius:10px;
+  cursor: pointer;
+  &:hover {
+  background-color:#f4ecf4;
+  color:blue;
+  }`;
+
+  export const FeedCard = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+`
 

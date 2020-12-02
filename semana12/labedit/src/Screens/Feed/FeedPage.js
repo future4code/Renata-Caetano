@@ -1,25 +1,35 @@
-import React from 'react';
-import Header from '../../Components/Header/Header';
-import {useHistory}from 'react-router-dom';
-import{FeedContainer,ButtonBack} from './styled'
-import { goToLogin} from '../../Routes/Cordinator';
-// import { Container } from './styles';
+// import React from 'react';
+// import Header from '../../Components/Header/Header';
+// import {useHistory}from 'react-router-dom';
+// import * as S from '../../Components/StyledGeral'
+// import { goToLoginPage} from '../../Routes/Cordinator';
+// import {useProtectPage}from '../../Hooks/useProtectPage'
 
-function FeedPage() {
-    const history=useHistory();
-  return (
-   <div>
-   <Header/>
-  <FeedContainer>
-TESTE SOU FEED
-<ButtonBack onClick={()=>goToLogin(history)}>Voltar</ButtonBack>
+// function FeedPage() {
+//     const history=useHistory();
+//     useProtectPage()
+
+//     const feeds = useRequestData(`${BaseUrl}/labEddit/posts`, [])
+
+//   return (
+//    <div>
+//    <Header/>
+//   <S.Container>
+//   {feeds.map(feeds => {
+//                 return <S.FeedCard 
+//                     key={id}
+//                     id={id}
+                   
+//                 />
+//             })}
+// <S.ButtonBack onClick={()=>goToLoginPage(history)}>Voltar</S.ButtonBack>
 
 
-</FeedContainer>
+// </S.Container>
 
-  </div>
+//   </div>
 
-  )
-}
+//   )
+// }
 
-export default FeedPage;
+// export default FeedPage;

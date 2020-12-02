@@ -4,14 +4,18 @@ import FeedPage from '../Screens/Feed/FeedPage';
 import LoginPage from '../Screens/Login/LoginPage';
 import Post from '../Screens/Post/Posts';
 import Register from '../Screens/Register/Register';
-
+import HomePage from '../Screens/HomePage.js'
 // import { Container } from './styles';
 
 function Router() {
   return (
 <BrowserRouter>
 <Switch>
-<Route exact path={['/','/login']}>
+    
+<Route exact path='/'>
+    <HomePage/>
+</Route>
+<Route exact path='/LoginPage'>
     <LoginPage/>
 </Route>
 <Route exact path='/Register'>

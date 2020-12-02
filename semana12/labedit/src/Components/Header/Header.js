@@ -1,19 +1,13 @@
 import React from 'react';
-import styled from 'styled-components'
-import LogoForum from '../../Assests/IMG/logoForum.jpg';
-// import { Container } from './styles';
-const TopContainer=styled.div`
-
-background-color:rgb(90, 200, 253);
-
-`
-
-
+import * as S from '../StyledGeral'
+import Logo from '../../Assests/IMG/Logo.jpg'
 function Header() {
   return (
-<TopContainer>
-   
-</TopContainer>
+<S.NavHeader>
+
+<img src={Logo} alt='logo baloes de conversa'/>
+<h1>Labeddit</h1>
+</S.NavHeader>
 
 
   )

@@ -4,9 +4,12 @@ export const goToRegister =(history)=>{
 export const goToFeedPage =(history)=>{
     history.push('/FeedPage')
 }
-export const goToLogin =(history)=>{
-    history.push('/')
+export const goToLoginPage =(history)=>{
+    history.push('/LoginPage')
 }
 export const goToPosts =(history)=>{
     history.push('/Posts')
+}
+export const goToHomePage =(history)=>{
+    history.push('/')
 }
