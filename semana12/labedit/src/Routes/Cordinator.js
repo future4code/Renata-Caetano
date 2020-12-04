@@ -7,8 +7,8 @@ export const goToFeedPage =(history)=>{
 export const goToLoginPage =(history)=>{
     history.push('/LoginPage')
 }
-export const goToPosts =(history)=>{
-    history.push('/Posts')
+export const goToPostPage =(history)=>{
+    history.push('/PostPage')
 }
 export const goToHomePage =(history)=>{
     history.push('/')

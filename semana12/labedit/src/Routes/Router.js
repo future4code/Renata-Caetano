@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import FeedPage from '../Screens/Feed/FeedPage';
 import LoginPage from '../Screens/Login/LoginPage';
-import Post from '../Screens/Post/Posts';
+import PostPage from '../Screens/Post/PostPage';
 import Register from '../Screens/Register/Register';
 import HomePage from '../Screens/HomePage.js'
 // import { Container } from './styles';
@@ -21,8 +21,8 @@ function Router() {
 <Route exact path='/Register'>
     <Register/>
 </Route>
-<Route exact path='/Post'>
-    <Post/>
+<Route exact path='/PostPage'>
+    <PostPage/>
 </Route>
 <Route exact path='/FeedPage'>
     <FeedPage/>

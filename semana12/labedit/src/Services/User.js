@@ -27,3 +27,22 @@ export const register = (body, history) => {
     console.log(er.mensage);
   });
 };
+
+
+  export const createPost = (body, history) => {
+    const token = localStorage.getItem("token");
+    axios
+      .post(`${BaseUrl}/posts`, body, {
+        headers: {
+          Authorization: token,
+        },
+      })
+      .then(() => {
+        goToFeedPage(history);
+      })
+      .catch((erro) => {
+        console.log(erro.mensage);
+      });
+  };
+
+  
