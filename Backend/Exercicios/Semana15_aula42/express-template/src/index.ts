@@ -4,7 +4,7 @@ import cors from 'cors'
 const app: Express = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors())
 
 
 import { AddressInfo } from "net";
@@ -14,6 +14,6 @@ const server = app.listen(process.env.PORT || 3003, () => {
        const address = server.address() as AddressInfo;
        console.log(`Server is running in http://localhost: ${address.port}`);
     } else {
-       console.error(`Failure upon starting server.`);
+       console.error(`Failure upon starting server.`)
     }
 });
