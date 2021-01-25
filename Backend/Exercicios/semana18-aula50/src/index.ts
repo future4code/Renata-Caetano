@@ -28,8 +28,8 @@ app.use(express.json());
 app.use(cors());
 
 
-app.post('/signup',createUser)//esta recebendo 2 parametros-caminho'/' e função
-
+app.put('/user',createUser)//esta recebendo 2 parametros-caminho'/' e função
+app.post('/signup',createUser)
 
 //SERVIDOR CONFIGURADO PARA INICIAR -- ABAIXO
 const server = app.listen(process.env.PORT || 3003, () => {

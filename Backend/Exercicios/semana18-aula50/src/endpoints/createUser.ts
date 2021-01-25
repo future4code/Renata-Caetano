@@ -9,17 +9,17 @@ export default async function createUser(
 )
     {
         try{
-            //validar entradas da requisição
-if      
- (!req.body.email || req.body.email.indexOf("@") === -1)
+
+if (!req.body.email || req.body.email.indexOf("@") === -1)
   {
         throw new Error("Invalid email");
       }
-      if (!req.body.password || req.body.password.length < 6) {
+       if(!req.body.password || req.body.password.length < 6) {
         throw new Error("Invalid password");
       }
+
       const userData = {
-        
+      
         email: req.body.email,
         password: req.body.password,
       };
@@ -27,7 +27,7 @@ if
       const id = generateId();
   
     
-      await createUser(userData.email, userData.password);
+      await insertUser(id,userData.email, userData.password);
   
       const token = generateToken(id);
             res

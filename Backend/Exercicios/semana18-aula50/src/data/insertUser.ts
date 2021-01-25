@@ -1,6 +1,5 @@
 import { connection } from '../index';
 
-	const userTableName = "User";
 
 	  export default async function insertUser (
 		id: string, 
@@ -12,5 +11,5 @@ import { connection } from '../index';
 	      email,
 	      password,
 	    })
-	    .into(userTableName);
+	    .into('User');
 	};
