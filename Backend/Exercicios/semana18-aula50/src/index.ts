@@ -39,4 +39,5 @@ const server = app.listen(process.env.PORT || 3003, () => {
     } else {
        console.error(`AFF DEU ERRO HEMM`);//SE DER ERRO MOSTRA ESTA MSG
     }
-});
+})
+;
