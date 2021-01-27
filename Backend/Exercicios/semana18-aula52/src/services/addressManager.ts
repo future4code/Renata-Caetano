@@ -11,7 +11,7 @@ const myAddress:address ={
     name:result.data.logradouro,
     neighbourhood: result.data.bairro,
     city:result.data.localidade,
-    state:result.data.state
+    state:result.data.uf
 }
 return myAddress;
 }catch (error){
