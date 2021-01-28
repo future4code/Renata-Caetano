@@ -15,7 +15,7 @@ export default async function insertUser(
         email,
         password,
         role
-    }).into('to_do_list_users')
+    }).into('to_do_list_user')
 }
 
 export enum USER_ROLES {

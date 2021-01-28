@@ -9,6 +9,7 @@ import createTask from './endpoints/createTask'
 import getTaskById from './endpoints/getTaskById'
 import login from './endpoints/login'
 import { getAddressInfo } from './endpoints/getAddressInfo'
+import createAddress from '../src/endpoints/createAddress'
 
 dotenv.config()
 
@@ -19,7 +20,7 @@ export const connection = knex({
       user: process.env.DB_USER,
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME,
-      port: 3306
+      port: 3003
    }
 })
 
@@ -37,9 +38,11 @@ app.post("/user/login", login)
 app.get('/user/:id', getUserById)
 app.post('/user/edit', editUser)
 
+
 app.put('/task', createTask)
 app.get('/task/:id', getTaskById)
 
+app.post('/create/address', createAddress )
 app.get('/address/:cep', getAddressInfo)
 
 

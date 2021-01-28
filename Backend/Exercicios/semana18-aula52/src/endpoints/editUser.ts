@@ -23,6 +23,8 @@ export default async function editUser(
          req.body.name === '' ||
          req.body.nickname === '' ||
          req.body.email === ''
+
+    
       ) {
          throw new Error("Nenhum dos campos pode estar em branco")
       }
