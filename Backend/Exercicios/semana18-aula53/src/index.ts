@@ -26,7 +26,7 @@ export const connection = knex({
 
 app.post('/user',createUser)
 
-
+console.log (process.env.DB_USER);
 
 
 const server = app.listen(process.env.PORT || 3003, () => {
