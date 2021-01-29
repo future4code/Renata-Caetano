@@ -5,3 +5,9 @@
 
 2- Login
  Basta informar o email e a senha corretamente que o usuário poderá se logar na aplicação. Os endpoints de login e cadastro devem retornar um token.
+
+ 3- Informações do Perfil
+  A partir do token de autenticação fornecido no login, o usuário deve ser capaz de ver as suas informações não sensíveis salvas no banco (id e email)
+
+
+  

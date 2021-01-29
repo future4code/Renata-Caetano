@@ -5,6 +5,7 @@ import dotenv from 'dotenv'
 import knex from 'knex'
 import createUser from './endpoits/createUser';
 import login from './endpoits/login';
+import getUserByToken from './endpoits/getUserByToken';
 dotenv.config()
 
 const app: Express = express();
@@ -26,7 +27,9 @@ export const connection = knex({
 })
 
 app.post('/user/signup',createUser) //cadastro
-app.post("/user/login", login) //login
+app.post("/user/login",login) //login
+
+app.get('/user/token', getUserByToken)//achar usuário pelo token
 
 
 console.log (process.env.DB_USER);
