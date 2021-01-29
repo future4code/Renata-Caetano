@@ -4,6 +4,7 @@ import { AddressInfo } from "net";
 import dotenv from 'dotenv'
 import knex from 'knex'
 import createUser from './endpoits/createUser';
+import login from './endpoits/login';
 dotenv.config()
 
 const app: Express = express();
@@ -24,7 +25,9 @@ export const connection = knex({
    }
 })
 
-app.post('/user',createUser)
+app.post('/user/signup',createUser) //cadastro
+app.post("/user/login", login) //login
+
 
 console.log (process.env.DB_USER);
 

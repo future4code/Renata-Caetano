@@ -1,0 +1,9 @@
+## cadastro usuário
+
+POST http://localhost:3003/user/signup
+Content-Type: :application/json
+{
+"name":"Maria Alice",
+"email":"maria@testeteste.com",
+"password":"1234567"
+}
