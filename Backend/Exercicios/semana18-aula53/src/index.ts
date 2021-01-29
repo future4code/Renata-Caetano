@@ -6,6 +6,7 @@ import knex from 'knex'
 import createUser from './endpoits/createUser';
 import login from './endpoits/login';
 import getUserByToken from './endpoits/getUserByToken';
+import createRecipes from './endpoits/createRecipes';
 dotenv.config()
 
 const app: Express = express();
@@ -31,6 +32,7 @@ app.post("/user/login",login) //login
 
 app.get('/user/token', getUserByToken)//achar usuário pelo token
 
+app.put('/recipes', createRecipes)
 
 console.log (process.env.DB_USER);
 

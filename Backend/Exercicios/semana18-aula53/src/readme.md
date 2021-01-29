@@ -9,5 +9,6 @@
  3- Informações do Perfil
   A partir do token de autenticação fornecido no login, o usuário deve ser capaz de ver as suas informações não sensíveis salvas no banco (id e email)
 
-
+4- Criar Receitas
+O usuário deve poder criar uma receita. A receita deve ter os seguintes atributos: título, descrição/modo de preparo e data de criação
   
