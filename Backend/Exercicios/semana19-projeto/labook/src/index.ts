@@ -5,6 +5,8 @@ import createUser from "../src/controller/createUser";
 import login from "../src/controller/login";
 import createPost from "../src/controller/createPost";
 import getPostById from "../src/controller/getPostById";
+import { userRouter } from "./controller/routes/userRouter";
+import { postRouter } from "./controller/routes/postRouter";
 
 /**************************** CONFIG ******************************/
 const app: Express = express()
@@ -15,13 +17,12 @@ app.use(cors())
 /**************************** SERVICES ******************************/
 
 /**************************** ENDPOINTS ******************************/
-app.post('/users/signup', createUser )
 
-app.post('/users/login', login)
+app.use('/users', userRouter )
 
-app.post('/posts/create', createPost)
- 
-app.get('/posts/:id', getPostById)
+app.use('/posts', postRouter)
+
+
 
 /**************************** SERVER INIT ******************************/
 
