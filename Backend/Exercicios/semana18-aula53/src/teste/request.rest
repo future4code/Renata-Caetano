@@ -1,0 +1,21 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "Manu",
+    "email": "manuzita@email.com",
+    "password": "123456aa"
+}
+
+###
+
+PUT http://localhost:3003/recipes
+Content-Type: application/json
+
+{
+
+"title":"Bolo de chocolate",
+"description":"TESTANDO",
+"user_id":"2ace6857-981c-4d58-848f-ecbc40ba1e3e",
+"date":"2021-01-29"  
+}
